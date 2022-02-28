@@ -1,0 +1,55 @@
+l , ls             :- list
+mkdir {name}       :- new directory
+init .             :- initialized git respository
+ls -a              :- for folder
+rm -rf .git        :- to remove the git respository
+git add .          :- to add files to directory
+touch {name}       :- to add files
+status             :- to check status
+git add {name}     :- to add file to directory
+git add.           :- to add all file(s)
+Git add *.{file type} :- to add all file types (html , css)
+rm {name}          :- to remove file
+rm -r --cached .   :- to remove file(s)
+git add . -A       :- to add other root files also
+cd ..              :- to get back to main directory
+commit -m {name}   :- to commit the files 
+git log            :- to check the commit files
+git show {id}      :- to show files
+vi {name}          :- to edit the file {i (edit) ; esc , wq}
+cat {name}         :- to check the edit details
+diff               :- to check the difference
+commit --amend -m {name} :- to change commit the file name
+git push           :- to push
+git pull           :- to pull
+git branch         :- to check branch
+git branch -a      :- to get all branch
+git branch {name}  :- to add branch
+git merge {branch name} :- to merge branch to main
+git  checkout {name} :- to change branches 
+git branch -d {name} :- to delete the branch
+git push -m orignal main :- to push data to main
+git pull -r(rebase) original main :- to pull data from main
+Gitignore :- add file to ignore in the git add files
+
+
+(git push 
+   
+   $ git remote add origin git@github.com:Manideep-B/train.git
+   $ git branch -M main
+   $ git push -u origin main
+
+    (or)
+   $ git push -u origin main --force
+   
+   (or)
+
+   git push --set-upstream origin master
+ )
+
+
+
+
+git key website:
+https://docs.github.com/en/enterprise-cloud@latest/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
